@@ -12,23 +12,25 @@
 	</head>
 	<body>
 		<div class="menu">
-			<h1><i class="fas fa-sticky-note"></i>MyNotes</h1>
+			<h1><i class="fas fa-sticky-note"></i> MyNotes</h1>
 
 			<div class="menu__buttons">
-				<button class="menu__add-btn icon">
+				<button class="menu__button menu__button-add icon">
 					<i class="fas fa-plus"></i> Add
 				</button>
-				<button class="menu__delete-all icon">
+				<button class="menu__button menu__button-delete-all icon">
 					<i class="fas fa-trash-alt"></i> Delete all
 				</button>
 			</div>
 		</div>
 
-		<div class="note__area">
+		<div class="note-area">
 			<div class="note">
 				<div class="note__header">
-					<h3 class="note__title">Note #1</h3>
-					<button class="not__delete"><i class="fas fa-times icon"></i></button>
+					<h3 class="note__header-title">Note #1</h3>
+					<button class="note__header-delete icon">
+						<i class="fa-solid fa-xmark"></i>
+					</button>
 				</div>
 
 				<div class="note__body">
@@ -55,10 +57,10 @@
 
 			<p class="error">Complete all the fields!</p>
 			<div class="panel__buttons">
-				<button class="panel__buttons-save icon">
+				<button class="panel__button panel__button-save icon">
 					<i class="fas fa-save"></i> Save
 				</button>
-				<button class="panel__buttons-cancel icon">
+				<button class="panel__button panel__button-cancel icon">
 					<i class="far fa-window-close"></i> Cancel
 				</button>
 			</div>
