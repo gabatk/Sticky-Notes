@@ -25,7 +25,7 @@
 		</div>
 
 		<div class="note-area">
-			<div class="note">
+			<div class="note-area__main">
 				<div class="note__header">
 					<h3 class="note__header-title">Note #1</h3>
 					<button class="note__header-delete icon">
@@ -41,10 +41,10 @@
 			</div>
 		</div>
 
-		<div class="note__panel">
-			<h2>Add note</h2>
-			<label for="category">Choose category</label>
-			<select id="category">
+		<div class="note-panel">
+			<h2 class="note-panel__title">Add note</h2>
+			<label for="category" class="note-panel__label">Choose category</label>
+			<select id="category" class="note-panel__field">
 				<option value="0" disabled selected>- choose category -</option>
 				<option value="3">reminder</option>
 				<option value="1">shopping</option>
@@ -52,15 +52,15 @@
 				<option value="4">other</option>
 			</select>
 
-			<label for="text">Type your note:</label>
-			<textarea id="text"></textarea>
+			<label for="text" class="note-panel__label">Type your note:</label>
+			<textarea id="text" class="note-panel__field"></textarea>
 
-			<p class="error">Complete all the fields!</p>
-			<div class="panel__buttons">
-				<button class="panel__button panel__button-save icon">
+			<p class="note-panel__error">Complete all the fields!</p>
+			<div class="note-panel__buttons">
+				<button class="note-panel__button note-panel__save icon">
 					<i class="fas fa-save"></i> Save
 				</button>
-				<button class="panel__button panel__button-cancel icon">
+				<button class="note-panel__button note-panel__cancel icon">
 					<i class="far fa-window-close"></i> Cancel
 				</button>
 			</div>
