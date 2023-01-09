@@ -85,6 +85,9 @@ const deleteNote = id => {
 	noteArea.removeChild(noteToDelete);
 };
 
+const deleteAllNotes = () => {};
+
 addBtn.addEventListener('click', showPanel);
 cancelBtn.addEventListener('click', closePanel);
 saveBtn.addEventListener('click', addNote);
+deleteAllBtn.addEventListener('click', deleteAllNotes);

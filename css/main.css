@@ -83,6 +83,7 @@ body {
 .note__body {
   padding: 20px 15px;
   font-size: 1.4rem;
+  overflow-wrap: break-word;
 }
 .note-panel {
   display: none;
