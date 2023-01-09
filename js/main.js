@@ -23,5 +23,24 @@ const closePanel = () => {
 	panelText.value = '';
 };
 
+const addNote = () => {
+	if (
+		panelText.value !== '' &&
+		panelCategory.options[panelCategory.selectedIndex].value !== '0'
+	) {
+		createNote();
+		panelError.style.visibility = 'hidden';
+	} else {
+		panelError.style.visibility = 'visible';
+	}
+};
+
+const createNote = () => {
+	const newNote = document.createElement('div');
+	newNote.classList.add('note-area__main');
+	newNote.setAttribute('id', cardID);
+};
+
 addBtn.addEventListener('click', showPanel);
 cancelBtn.addEventListener('click', closePanel);
+saveBtn.addEventListener('click', addNote);
