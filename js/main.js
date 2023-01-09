@@ -66,7 +66,7 @@ const selectValue = () => {
 const checkColor = note => {
 	switch (selectedValue) {
 		case 'Reminder':
-			note.style.backgroundColor = 'rgb(245, 112, 209';
+			note.style.backgroundColor = 'rgb(245, 112, 209)';
 			break;
 		case 'Shopping':
 			note.style.backgroundColor = 'rgb(72, 255, 0)';
