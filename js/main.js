@@ -39,6 +39,45 @@ const createNote = () => {
 	const newNote = document.createElement('div');
 	newNote.classList.add('note-area__main');
 	newNote.setAttribute('id', cardID);
+
+	newNote.innerHTML = `
+    <div class="note__header">
+    <h3 class="note__header-title">${selectedValue}</h3>
+    <button class="note__header-delete icon">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+    </div>
+
+    <div class="note__body">
+    ${panelText.value}
+    </div>
+`;
+
+	noteArea.appendChild(newNote);
+	cardID++;
+	closePanel();
+	checkColor(newNote);
+};
+
+const selectValue = () => {
+	selectedValue = panelCategory.options[panelCategory.selectedIndex].text;
+};
+
+const checkColor = note => {
+	switch (selectedValue) {
+		case 'Reminder':
+			note.style.backgroundColor = 'rgb(245, 112, 209';
+			break;
+		case 'Shopping':
+			note.style.backgroundColor = 'rgb(72, 255, 0)';
+			break;
+		case 'Work':
+			note.style.backgroundColor = 'rgb(255, 243, 0)';
+			break;
+		case 'Other':
+			note.style.backgroundColor = 'rgb(0, 170, 255)';
+			break;
+	}
 };
 
 addBtn.addEventListener('click', showPanel);

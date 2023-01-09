@@ -25,7 +25,7 @@
 		</div>
 
 		<div class="note-area">
-			<div class="note-area__main">
+			<!-- <div class="note-area__main">
 				<div class="note__header">
 					<h3 class="note__header-title">Note #1</h3>
 					<button class="note__header-delete icon">
@@ -38,18 +38,18 @@
 					id, quo impedit amet corrupti error autem quod at. Ea earum ipsa
 					similique at non quaerat, repellendus eos debitis assumenda.
 				</div>
-			</div>
+			</div> -->
 		</div>
 
 		<div class="note-panel">
 			<h2 class="note-panel__title">Add note</h2>
 			<label for="category" class="note-panel__label">Choose category</label>
-			<select id="category" class="note-panel__field">
+			<select id="category" class="note-panel__field" onchange="selectValue()">
 				<option value="0" disabled selected>- choose category -</option>
-				<option value="3">reminder</option>
-				<option value="1">shopping</option>
-				<option value="2">work</option>
-				<option value="4">other</option>
+				<option value="1">Reminder</option>
+				<option value="2">Shopping</option>
+				<option value="3">Work</option>
+				<option value="4">Other</option>
 			</select>
 
 			<label for="text" class="note-panel__label">Type your note:</label>

@@ -58,7 +58,6 @@ body {
 .note-area__main {
   margin: 40px 20px;
   width: 240px;
-  background-color: rgb(243, 223, 110);
   border: 1px solid black;
 }
 .note__header {
